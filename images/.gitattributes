@@ -1,0 +1,6 @@
+DFA_Example1.png filter=lfs diff=lfs merge=lfs -text
+NDFA_Example1.png filter=lfs diff=lfs merge=lfs -text
+DFA_practice1.1.png filter=lfs diff=lfs merge=lfs -text
+DFA_practice1.2.png filter=lfs diff=lfs merge=lfs -text
+types_of_automata.png filter=lfs diff=lfs merge=lfs -text
+dfa_diagram.gv filter=lfs diff=lfs merge=lfs -text
