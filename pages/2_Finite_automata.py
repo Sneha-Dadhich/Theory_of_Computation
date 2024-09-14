@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 st.set_page_config(page_title = "Study Conscious")
 
 chapter1 = f"""
@@ -28,15 +29,16 @@ is accepted.
 1. **Deterministic Finite Automaton (DFA):** For each state and input symbol, there is exactly one transition
 to a next state. DFAs are used to recognize regular languages.""")
     
-    st.image(r"C:\Users\Dell\Desktop\Sneha2.0\Programs1\Python\Definite_Automata\images\DFA_Example1.jpg")
-             
+    image = Image.open("static/images/DFA_Example1.jpg")
+    st.image(image, caption='Example of DFA')         
     st.write(f"""
 2. **Non-deterministic Finite Automaton (NFA):** For each state and input symbol, there can be multiple 
 possible transitions, including transitions without input (ε-transitions). Despite its flexibility, NFAs are 
 equivalent in power to DFAs in terms of the languages they can recognize.""")
     
-    st.image(r"C:\Users\Dell\Desktop\Sneha2.0\Programs1\Python\Definite_Automata\images\NDFA_Example1.png", use_column_width="never")
-    
+    image = Image.open("static/images/NDFA_Example1.png")
+    st.image(image, caption='Example of NDFA')
+
     st.write(f"""
 ### Uses of Finite Automata:
 - **Pattern Matching:** Used in text editors, search engines, and lexical analyzers to match patterns in 

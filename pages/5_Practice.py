@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st
+from PIL import Image
 st.set_page_config(page_title = "Study Conscious")
 
 chapter1 = f"""
@@ -40,7 +41,8 @@ basic patterns.
     edited_df = st.data_editor(df, key="2")
     if st.button("Check"):
         if chk_answer(ans_df, edited_df):
-            st.image(r"images\DFA_practice1.1.png")
+            image = Image.open("static/images/DFA_practice1.png")
+            st.image(image, caption='DFA Pratice 1')
         else :
             st.error("Wrong Data")
     
@@ -57,7 +59,8 @@ expected.
     edited_df = st.data_editor(df)
     if st.button("Check", key = "button_2"):
         if chk_answer(ans_df, edited_df):
-            st.image(r"images\DFA_practice1.2.png")
+            image = Image.open("static/images/DFA_practice1.png")
+            st.image(image, caption='DFA Pratice 1')
         else :
             st.error("Wrong Data")
 #     st.write("""

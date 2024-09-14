@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 st.set_page_config(page_title = "Study Conscious")
 
 chapter1 = f"""
@@ -22,7 +23,8 @@ def chapter2_intro():
 behavior of computational systems. An automaton (singular of automata) operates on inputs, processes them 
 according to a set of predefined rules, and produces outputs. The study of automata is a foundational topic 
 in the Theory of Computation.""")
-    st.image(r"C:\Users\Dell\Desktop\Sneha2.0\Programs1\Python\Definite_Automata\images\types_of_automata.png")
+    image = Image.open("static/images/types_of_automata.png")
+    st.image(image, caption='Types of Automata')
 
     st.write(f"""
 ### Types of Automata:
